@@ -1,13 +1,14 @@
-# pyflapjackevents
+pyflapjackevents
+================
 
-
-pyflapjackevents is a small library that serializes [Flapjack](flapjack|http://flapjack.io/) events as described in it's own [Data structures](http://flapjack.io/docs/1.0/development/DATA_STRUCTURES/). It's main intention is to allow sending monitor events to flapjack from python programs.
+pyflapjackevents is a small library that serializes `flapjack <http://flapjack.io>`_ events as described in it's own `Data structures <http://flapjack.io/docs/1.0/development/DATA_STRUCTURES/>`_. It's main intention is to allow sending monitor events to flapjack from python programs.
 
 
 An example:
 
-```
-server = redis.Redis(host='localhost', port='6380')
+.. code-block:: python
+
+    server = redis.Redis(host='localhost', port='6380')
     sink = FlapjackEventSink(server, 'events')
     event = FlapjackEvent(
         'test-entity',
@@ -18,33 +19,32 @@ server = redis.Redis(host='localhost', port='6380')
         details = 'test-details',
     )
     sink.send(event)
-```
+
 
 
 This would serialize the event and send it to the appropriate Redis channel for flapjack consumption.
 
-## Installation
+Installation
+------------
+Just do::
 
-Just do:
+    pip install pyflapjackevents 
 
-```
-pip install pyflapjackevents 
-```
 
-or installing it from source:
+or installing it from source::
 
-```
-git clone https://github.com/tuenti/pyflapjackevents.git
-cd pyflapjackevents
-python setup.py install
-```
-## Requirements
+    git clone https://github.com/tuenti/pyflapjackevents.git
+    cd pyflapjackevents
+    python setup.py install
 
+Requirements
+------------
 There're no special requirements for this library.
 
-## Credits & Contact
+Credits & Contact
+-----------------
+pyflapjackevents was created by Tuenti Technologies S.L.. You can follow Tuenti engineering team on Twitter `@tuentieng <https://twitter.com/tuentieng>`_.
 
-pyflapjackevents was created by Tuenti Technologies S.L.. You can follow Tuenti engineering team on Twitter @tuentieng.
-
-## License
+License
+-------
 pyflapjackevents is available under the Apache License, Version 2.0. See LICENSE file for more info.
