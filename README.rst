@@ -50,3 +50,8 @@ pyflapjackevents was created by Tuenti Technologies S.L.. You can follow Tuenti 
 License
 -------
 pyflapjackevents is available under the Apache License, Version 2.0. See LICENSE file for more info.
+
+
+.. |travis| image:: https://api.travis-ci.org/tuenti/pyflapjackevents.png
+  :target: `Travis`_
+  :alt: Travis results
