@@ -1,7 +1,13 @@
 pyflapjackevents
 ================
 
-|travis|
+
+==============  ===============  =========
+VERSION         DOWNLOADS        TESTS
+==============  ===============  =========
+|pip version|   |pip downloads|  |travis|
+==============  ===============  =========
+
 
 pyflapjackevents is a small library that serializes `flapjack <http://flapjack.io>`_ events as described in it's own `Data structures <http://flapjack.io/docs/1.0/development/DATA_STRUCTURES/>`_. It's main intention is to allow sending monitor events to flapjack from python programs.
 
@@ -55,3 +61,14 @@ pyflapjackevents is available under the Apache License, Version 2.0. See LICENSE
 .. |travis| image:: https://api.travis-ci.org/tuenti/pyflapjackevents.png
   :target: `Travis`_
   :alt: Travis results
+
+
+.. |pip version| image:: https://pypip.in/v/pyflapjackevents/badge.png
+    :target: https://pypi.python.org/pypi/pyflapjackevents
+    :alt: Latest PyPI version
+
+.. |pip downloads| image:: https://pypip.in/d/pyflapjackevents/badge.png
+    :target: https://pypi.python.org/pypi/pyflapjackevents
+    :alt: Number of PyPI downloads
+
+.. _Travis: https://travis-ci.org/magmax/inception
