@@ -42,7 +42,7 @@ class PyTest(TestCommand):
 setup(name='pyflapjackevents',
       version=pyflapjackevents.__version__,
       description="Send status events to flapjack from python.",
-      long_description=file('README.rst').read(),
+      long_description=open('README.rst').read(),
       classifiers=[],
       keywords='',
       author='Jose Plana',
